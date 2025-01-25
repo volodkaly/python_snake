@@ -30,15 +30,15 @@ direction = 'RIGHT'
 
 # Function to display Game Over message
 def game_over():
-    msg = "Game Over! Press any key to exit."
+    msg = "Game Over!"
     w.clear()  # Clear the screen to make sure the message is visible
     w.addstr(sh // 2, (sw // 2) - len(msg) // 2, msg, curses.color_pair(3))  # Center the message
     w.refresh()  # Refresh the screen to update it with the message
-    time.sleep(10)  # Delay for 2 seconds to allow the player to see the message
-    w.clear()  # Clear the screen again before exiting
-    w.refresh()  # Refresh to ensure the screen is cleared before quitting
-    w.getch()  # Wait for user input before exiting
+    time.sleep(3)
 
+ # Delay for 2 seconds to allow the player to see the message
+
+  
 
 # Main game loop
 while True:
